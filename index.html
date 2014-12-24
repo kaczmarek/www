@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html lang="ru" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="ru" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title>WeCare</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,300,700" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"> </script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.2.min.js"> <\/script>')</script>
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"> </script><![endif]-->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"> </script>
+	<script src="js/libs/infobox.js"> </script>
+	<script src="js/libs/scrollspy.js"> </script>
+	<script src="js/libs/easyResponsiveTabs.js"> </script>
+	<script src="js/script.js"> </script>
+	<script type="text/javascript">
+		 $(document).ready(function () {
+		 	$('#wecare-tab').easyResponsiveTabs({
+		 		type: 'default', //Types: default, vertical, accordion
+		 		width: 'auto', //auto or any width like 600px
+		 		fit: true, // 100% fit in a container
+		 	});
+		 });
+	</script>
+</head>
+<body>
+	<header role="banner">
+		<div id="header-inn">
+			<a href="#" id="top-logo"><img src="img/wecare_logo.png" alt="We Care"></a>
+			<span class="pseudo-menu">&#9776;</span>
+			<nav id="top-menu" role="navigation">
+				<a href="#services">Our services</a>
+				<a href="#about-us">About clinic</a>
+				<a href="#our-doctors">Our doctors</a>
+				<a href="#contacts">Contacts</a>
+			</nav><!-- #top-menu -->
+		</div><!-- #header-inn -->
+	</header>
+	<section id="services" class="section-main section">
+		<div class="section-inn">
+			<div class="half-block f-left">
+				<div class="services-provide-block">
+					<h3>The services <span>our clinic provide:</span></h3>
+					<ul>
+						<li class="item-1 active">
+							<strong>Examinations</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu.</p>
+						</li>
+						<li class="item-2">
+							<strong>Internal Medicine</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu.</p>
+						</li>
+						<li class="item-3">
+							<strong>Body-Work Services</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu.</p>
+						</li>
+					</ul>
+					<a href="#our-doctors" class="to-doctors-btn">Who are the doctors?</a>
+				</div><!-- .services-provide-block -->
+			</div>
+			<div class="half-block f-right">
+				<div class="services-slider-block">
+					<div id="slider-wrap">
+						<div id="slider">
+						    <figure class="slide"><img src="img/large-slides/slide.png" alt="Slide 1"></figure>
+						    <figure class="slide"><img src="img/large-slides/slide.png" alt="Slide 2"></figure>
+						    <figure class="slide"><img src="img/large-slides/slide.png" alt="Slide 3"></figure>
+						</div><!-- #slider -->
+					</div><!-- #slider-wrap -->
+				</div><!-- .services-slider-block -->
+			</div>
+			<h1 class="services-main-title">WeCare Veterinary Clinic - a veterinary hospital with a unique approach to the healthcare of your pet.</h1>
+			<div id="sb" class="services-bottom-block section">
+				<h4>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</h4>
+				<button>Get in touch with us</button>
+			</div><!-- .services-bottom-block -->
+		</div><!-- .section-inn -->
+	</section><!-- #services -->
+	<div id="pets-bg">
+		<section id="about-us" class="section-main section">
+			<div class="section-inn">
+				<h3 class="middle-title">About our <span>veterinary clinic</span></h3>
+				<div class="middle-text">
+					<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				</div><!-- .middle-text -->
+				<div class="our-awards-wrap">
+					<div class="our-awards-slider">
+						<img src="http://placehold.it/415x281/e6e6e6/000000" alt="Award Name Slide 1" class="award-img">
+						<img src="http://placehold.it/415x281/e6e6e6/000000" alt="Award Name Slide 2" class="award-img">
+						<img src="http://placehold.it/415x281/e6e6e6/000000" alt="Award Name Slider 3" class="award-img">
+					</div><!-- .our-awards-slider -->
+					<div class="our-awards-text">
+						<div id="wecare-tab">
+							<ul class="resp-tabs-list">
+								<li>How we do it?</li>
+								<li>Why we do it?</li>
+								<li>Our Mission</li>
+							</ul>
+							<div class="resp-tabs-container">
+								<div>
+									<ul>
+										<li>Morbi leo risus, porta ac consectetur ac, vestibulum at eros, ac consectetur.</li>
+										<li>Cras mattis consectetur purus sit amet fermentum.</li>
+										<li>Etiam porta sem malesuada magna mollis euismod, mattis consectetur.</li>
+										<li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+										<li>Aenean lacinia bibendum nulla sed consectetur posuere.</li>
+									</ul>
+								</div>
+								<div>
+									<ul>
+										<li>Aenean lacinia bibendum nulla sed consectetur posuere.</li>
+										<li>Cras mattis consectetur purus sit amet fermentum.</li>
+										<li>Etiam porta sem malesuada magna mollis euismod, mattis consectetur.</li>
+										<li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+										<li>Morbi leo risus, porta ac consectetur ac, vestibulum at eros, ac consectetur.</li>
+									</ul>
+								</div>
+								<div>
+									<ul>
+										<li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+										<li>Aenean lacinia bibendum nulla sed consectetur posuere.</li>
+										<li>Morbi leo risus, porta ac consectetur ac, vestibulum at eros, ac consectetur.</li>
+										<li>Cras mattis consectetur purus sit amet fermentum.</li>
+										<li>Etiam porta sem malesuada magna mollis euismod, mattis consectetur.</li>
+									</ul>
+								</div>
+							</div><!-- .resp-tabs-container -->
+						</div><!-- #wecare-tab -->
+					</div><!-- .our-awards-text -->
+				</div><!-- .our-awards-wrap -->
+
+				<div class="about-our-pacients-block">
+<!--					<h4>Who are our pacients?</h4>   -->
+					<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur posuere.</p>
+				</div><!-- .about-our-pacients-block -->
+				<ul class="list-of-our-pacients">
+					<li>
+						<figure><img src="http://placehold.it/90x90/e6e6e6/000000" alt="Pacient A"></figure>
+						<h5>Pacient A</h5>
+						<p>Vestibulum id ligula porta felis euismod semper porta.</p>
+					</li>
+					<li>
+						<figure><img src="http://placehold.it/90x90/e6e6e6/000000" alt="Pacient B"></figure>
+						<h5>Pacient B</h5>
+						<p>Aenean eu leo quam ornare sem lacinia qu venenatis vestibulum.</p>
+					</li>
+					<li>
+						<figure><img src="http://placehold.it/90x90/e6e6e6/000000" alt="Pacient C"></figure>
+						<h5>Pacient C</h5>
+						<p>Praesent  magnale scelerisque nisl consectetur e nulla vitae. </p>
+					</li>
+					<li>
+						<figure><img src="http://placehold.it/90x90/e6e6e6/000000" alt="Pacient D"></figure>
+						<h5>Pacient D</h5>
+						<p>Maecenas diam eget risus varius blandit sit amet non magna.</p>
+					</li>
+					<li>
+						<figure><img src="http://placehold.it/90x90/e6e6e6/000000" alt="Pacient E"></figure>
+						<h5>Pacient E</h5>
+						<p>Morbi risus porta ac consectetur lacina, vestibulum at eros. </p>
+					</li>
+				</ul><!-- .list-of-our-pacients -->
+			</div><!-- .section-inn -->
+		</section><!-- #about-us -->
+		<section id="our-doctors" class="section-main section">
+			<div class="section-inn">
+				<h3 class="middle-title">The clinic's <span>doctors</span></h3>
+				<div class="middle-text">
+					<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+					Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				</div><!-- .middle-text -->
+				<ul class="list-of-doctors">
+					<li>
+						<img src="img/doctors/item.png" alt="Thomas Backson">
+						<h4>Thomas Backson</h4>
+						<p>Vestibulum id ligula porta felis euismod semper porta.</p>
+					</li>
+					<li>
+						<img src="img/doctors/item.png" alt="Jane Lewis">
+						<h4>Jane Lewis</h4>
+						<p>Vestibulum id ligula porta felis euismod semper porta.</p>
+					</li>
+					<li>
+						<img src="img/doctors/item.png" alt="Mark Oldsome">
+						<h4>Mark Oldsome</h4>
+						<p>Vestibulum id ligula porta felis euismod semper porta.</p>
+					</li>
+					<li>
+						<img src="img/doctors/item.png" alt="Eva Smith">
+						<h4>Eva Smith</h4>
+						<p>Vestibulum id ligula porta felis euismod semper porta.</p>
+					</li>
+				</ul><!-- .list-of-doctors -->
+			</div><!-- .section-inn -->
+		</section><!-- #our-doctors -->
+	</div><!-- #pets-bg -->
+	<section id="contacts" class="section-main section">
+		<div class="section-inn">
+			<div class="contacts-info">
+				<strong>Keep in touch <span>with us</span></strong>
+				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+				<p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			</div><!-- .contacts-info -->
+			<ul class="contacts-address">
+				<li>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus.</li>
+				<li>20603 Arch Street Little Rock, AR 72206</li>
+				<li>302-320-5796</li>
+				<li>support@wecareclinic.com</li>
+			</ul><!-- .contacts-address -->
+			<form action="contact.php" method="post" class="contact-form">
+				<textarea id="message" name="message" rows="5" cols="20" placeholder="Message"></textarea>
+				<div class="f-right">
+					<input id="name" name="name" type="text" placeholder="Name">
+					<input id="email" name="email" type="text" placeholder="E-mail">
+					<button type="submit">Send message</button>
+				</div><!-- .f-right -->
+			</form>
+		</div><!-- .section-inn -->
+	</section><!-- #contacts -->
+	<section class="map-section section-main">
+		<div id="map_canvas"></div>
+	</section><!-- .map-section -->
+	<footer role="contentinfo">
+		<div class="foo-inn">
+			<nav id="bottom-menu">
+				<a href="#services">Our services</a><span>|</span>
+				<a href="#about-us">About clinic</a><span>|</span>
+				<a href="#our-doctors">Our doctors</a><span>|</span>
+				<a href="#contacts">Contacts</a>
+			</nav><!-- #bottom-menu -->
+			<a href="#" class="foot-logo"><img src="img/foot-logo.png" alt="We Care"></a>
+			<p class="copyright">&copy; Copyright 2014. All Rights Reserved.</p>
+		</div><!-- .foo-inn -->
+	</footer>
+	<div class="navigation-fixed">
+		<span class="button-top">Back to Top</span>
+		<span class="button-bottom">Next Section</span>
+	</div><!-- .navigation-fixed -->
+
+	<!-- Analytics -->
+
+	<script type="text/javascript">
+	var _gaq = _gaq || []; _gaq.push(['_setAccount', 'Insert Your Code']); _gaq.push(['_trackPageview']);
+	(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+	</script>
+
+	<!-- End Analytics -->
+</body>
+</html>
