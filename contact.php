@@ -1,18 +1,18 @@
 <?php
 
-define('DEBUG', true); // Set to false on production
+define('DEBUG', false); // Set to false on production
 
 define('MAIL_SMTP', true); // Use SMTP, if "false" use "mail" and it settings
 define('MAIL_SMTP_HOST', 'smtp.gmail.com'); // (Only if you use "MAIL_SMTP == true") SMTP server
 define('MAIL_SMTP_PORT', 465); // (ТOnly if you use "MAIL_SMTP == true")  port
-define('MAIL_SMTP_USERNAME', 'test@gmail.com'); // (Only if you use "MAIL_SMTP == true")  user
-define('MAIL_SMTP_PASSWORD', 'secret'); // (Only if you use "MAIL_SMTP == true")  password
+define('MAIL_SMTP_USERNAME', 'edek123456@gmail.com'); // (Only if you use "MAIL_SMTP == true")  user
+define('MAIL_SMTP_PASSWORD', 'entaroadun'); // (Only if you use "MAIL_SMTP == true")  password
 
-define('MAIL_SUBJECT', 'Your subject'); // Mail Subject
-define('MAIL_TO_EMAIL', 'john.johnson@me.domain'); // on which mail must be send mail
+define('MAIL_SUBJECT', 'Wiadomość ze strony kaczmarek.szczecin.pl'); // Mail Subject
+define('MAIL_TO_EMAIL', 'ewa.lewandowska@poczta.fm'); // on which mail must be send mail
 
-define('MAIL_MESSAGE_SUCCESS', 'Thank you for message!'); // Message from contact form when mail is succesfull send.
-define('MAIL_MESSAGE_ERROR', 'There is some problem, try to send your message later.');  // Message from contact form when mail is not send when send is failed.
+define('MAIL_MESSAGE_SUCCESS', 'Dziękuję za Twoją wiadomość!'); // Message from contact form when mail is succesfull send.
+define('MAIL_MESSAGE_ERROR', 'Wystąpił problem przy wysyłaniu wiadomości, proszę spróbować później.');  // Message from contact form when mail is not send when send is failed.
 
 if (!defined('__DIR__')) {
     define('__DIR__', dirname(__FILE__));

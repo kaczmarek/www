@@ -74,7 +74,7 @@ $(function() {
 	    function(){pause = false; rotator();
 	});
 
-	rotator();
+	//rotator();
 
 /*---- Awards slider ----*/
 
@@ -123,13 +123,15 @@ $(function() {
 	    function(){pause = false; rotatorAward();
 	});
 
-	rotatorAward();
+	// rotatorAward();
+
+	
 
 /*---- Google Map ----*/
 
 	function initialize() {
 
-		var secheltLoc = new google.maps.LatLng(49.47216, -123.76307);
+		var secheltLoc = new google.maps.LatLng(53.434902, 14.535616);
 
 		var myMapOptions = {
 			scrollwheel: false
@@ -146,7 +148,7 @@ $(function() {
 		var marker = new google.maps.Marker({
 			map: theMap,
 			draggable: false,
-			position: new google.maps.LatLng(49.47216, -123.76307),
+			position: new google.maps.LatLng(53.434902, 14.535616),
 			icon: image,
 			visible: true
 		});
@@ -154,8 +156,8 @@ $(function() {
 		var boxText = document.createElement('div');
 
 		var contentString = '<div id="content-boolean">'+
-	      '<h1>We Care GmbH</h1>'+
-	      '<p>20603 Arch Street Little Rock, AR 72206</p>'+
+	      '<h1>ProCordis</h1>'+
+	      '<p>ul. Pocztowa 1a/2, Szczecin</p>'+
 	      '</div>';
 
 		var myOptions = {

@@ -153,37 +153,20 @@ a:hover{text-decoration:none;}
 #top-logo{
   float:left;
   position: relative;
-}
-#top-logo:after{
-  content: '';
-  display: block;
-  position: absolute;
-  top: 27px;
-  right: -10px;
-  width: 42px;
-  height: 42px;
-  background: url('../img/wecare_logo_heart.png') 50% 50% no-repeat;
-  background-size: 100%;
-  z-index: 10;
-  -webkit-animation: heartbeat 10s linear 5s infinite;
-  animation: heartbeat 10s linear 5s infinite;
-}
-@-webkit-keyframes heartbeat{
-  0%    {background-size: 100%}
-  3%   {background-size: 70%}
-  10%  {background-size: 100%}
-  100%  {background-size: 100%}
-}
-@keyframes heartbeat{
-  0%    {background-size: 100%}
-  2%   {background-size: 70%}
-  6%  {background-size: 100%}
-  100%  {background-size: 100%}
+  text-decoration: none;
 }
 
-#top-logo:hover:after{
-  animation-play-state: paused;
-  -webkit-animation-play-state: paused;
+#top-logo h1 {
+  margin: 21px 0px 0px 0px;
+  padding: 0px;
+  color: #FFF;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px rgba(86, 64, 67, 0.5);
+}
+
+#top-logo h3{
+  color: #FFF;
+  text-shadow: 2px 2px 2px rgba(86, 64, 67, 0.5);
 }
 
 #top-menu{
@@ -198,9 +181,8 @@ a:hover{text-decoration:none;}
   text-transform:uppercase;
   color:#fff;
   font:normal 16px/16px 'Roboto', sans-serif;
-  margin-left:32px;
+  margin-left:16px;
   padding: 5px 0 0 22px;
-  background: url('../img/wecare_sprite01.png') 0 -120px no-repeat;
   text-shadow: 1px 1px 2px rgba(86,64,67,0.5);
   -webkit-transition:color .4s ease;
   -moz-transition:color .4s ease;
@@ -208,16 +190,6 @@ a:hover{text-decoration:none;}
   transition:color .4s ease;
 }
 
-#top-menu a:first-child{
-  margin-left:0;
-  background: url('../img/wecare_sprite01.png') 0 0 no-repeat;
-}
-#top-menu a:first-child + a{
-  background: url('../img/wecare_sprite01.png') 0 -40px no-repeat;
-}
-#top-menu a:first-child + a + a{
-  background: url('../img/wecare_sprite01.png') 0 -78px no-repeat;
-}
 #top-menu a:hover{color:#95aeb9;}
 
 .pseudo-menu{display:none;}
@@ -916,10 +888,10 @@ ul.contacts-address{
   background: url('../img/wecare_sprite03.png') 0 4px no-repeat;
 }
 .contacts-address li:first-child + li + li{
-  background: url('../img/wecare_sprite03.png') 0 -74px no-repeat;
+  background: url('../img/wecare_sprite03.png') 0 -154px no-repeat;
 }
 .contacts-address li:first-child + li + li + li{
-  background: url('../img/wecare_sprite03.png') 0 -154px no-repeat;
+  background: url('../img/wecare_sprite03.png') 0 -74px no-repeat;
 }
 
 form.contact-form{
@@ -1098,6 +1070,7 @@ footer[role="contentinfo"]{
   line-height: 33px;
   font-weight: bold;
   margin: 0;
+  margin-left: 16px;
   -webkit-transition:color .4s ease;
   -moz-transition:color .4s ease;
   -o-transition:color .4s ease;
@@ -1513,7 +1486,10 @@ footer[role="contentinfo"]{
     display:block;
     position:relative;
     z-index:1;
+  
   }
+
+
 
   .services-main-title{
     color:#fff;
