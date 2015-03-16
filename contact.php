@@ -47,9 +47,9 @@ function post_param($name, $default = null) {
 }
 
 if ($_POST) {
-    $name = htmlentities(strip_tags(post_param('name', '')));
+    $name = strip_tags(post_param('name', ''));
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-    $message = htmlentities(strip_tags(post_param('message', '')));
+    $message = strip_tags(post_param('message', ''));
     $errors = array();
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
