@@ -3,10 +3,10 @@
 define('DEBUG', false); // Set to false on production
 
 define('MAIL_SMTP', true); // Use SMTP, if "false" use "mail" and it settings
-define('MAIL_SMTP_HOST', 'smtp.gmail.com'); // (Only if you use "MAIL_SMTP == true") SMTP server
-define('MAIL_SMTP_PORT', 465); // (ТOnly if you use "MAIL_SMTP == true")  port
-define('MAIL_SMTP_USERNAME', 'edek123456@gmail.com'); // (Only if you use "MAIL_SMTP == true")  user
-define('MAIL_SMTP_PASSWORD', 'entaroadun'); // (Only if you use "MAIL_SMTP == true")  password
+define('MAIL_SMTP_HOST', 'smtp.mandrillapp.com'); // (Only if you use "MAIL_SMTP == true") SMTP server
+define('MAIL_SMTP_PORT', 587); // (ТOnly if you use "MAIL_SMTP == true")  port
+define('MAIL_SMTP_USERNAME', 'marcin@saepia.net'); // (Only if you use "MAIL_SMTP == true")  user
+define('MAIL_SMTP_PASSWORD', 'C1T0n-CmVHZJvQAlHua9AA'); // (Only if you use "MAIL_SMTP == true")  password
 
 define('MAIL_SUBJECT', 'Wiadomość ze strony kaczmarek.szczecin.pl'); // Mail Subject
 define('MAIL_TO_EMAIL', 'marcin@saepia.net'); // on which mail must be send mail
