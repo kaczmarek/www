@@ -10,7 +10,7 @@ define('MAIL_SMTP_PASSWORD', 'C1T0n-CmVHZJvQAlHua9AA'); // (Only if you use "MAI
 
 define('MAIL_SUBJECT', 'Wiadomość ze strony kaczmarek.szczecin.pl'); // Mail Subject
 define('MAIL_FROM_EMAIL', 'noreply@kaczmarek.szczecin.pl'); // sender email
-define('MAIL_TO_EMAIL', 'marcin@saepia.net'); // recipient email
+define('MAIL_TO_EMAIL', 'kaczbart@poczta.onet.pl'); // recipient email
 
 define('MAIL_MESSAGE_SUCCESS', 'Dziękuję za Twoją wiadomość!'); // Message from contact form when mail is succesfull send.
 define('MAIL_MESSAGE_ERROR', 'Wystąpił problem przy wysyłaniu wiadomości, proszę spróbować później.');  // Message from contact form when mail is not send when send is failed.
