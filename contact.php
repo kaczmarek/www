@@ -9,7 +9,7 @@ define('MAIL_SMTP_USERNAME', 'edek123456@gmail.com'); // (Only if you use "MAIL_
 define('MAIL_SMTP_PASSWORD', 'entaroadun'); // (Only if you use "MAIL_SMTP == true")  password
 
 define('MAIL_SUBJECT', 'Wiadomość ze strony kaczmarek.szczecin.pl'); // Mail Subject
-define('MAIL_TO_EMAIL', 'ewa.lewandowska@poczta.fm'); // on which mail must be send mail
+define('MAIL_TO_EMAIL', 'marcin@saepia.net'); // on which mail must be send mail
 
 define('MAIL_MESSAGE_SUCCESS', 'Dziękuję za Twoją wiadomość!'); // Message from contact form when mail is succesfull send.
 define('MAIL_MESSAGE_ERROR', 'Wystąpił problem przy wysyłaniu wiadomości, proszę spróbować później.');  // Message from contact form when mail is not send when send is failed.
@@ -52,16 +52,16 @@ if ($_POST) {
     $errors = array();
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors['email'] = 'Invalid email address';
+        $errors['email'] = 'Nieprawidłowy adres e-mail';
     }
 
     if (empty($name)) {
-        $errors['name'] = 'Name cannot be empty.';
+        $errors['name'] = 'Imię i nazwisko musi być wypełnione.';
     }
 
 
     if (empty($message)) {
-        $errors['message'] = 'Message cannot be empty.';
+        $errors['message'] = 'Wiadomość nie może być pusta.';
     }
 
     if (count($errors) === 0) {
@@ -94,11 +94,11 @@ if ($_POST) {
             }
         } catch (Swift_TransportException $e) {
             echo json_encode(array(
-                'error' => DEBUG ? $e->getMessage() : 'Mail send transport error, please try again.'
+                'error' => DEBUG ? $e->getMessage() : 'Nie udało się połączyć z serwerem poczty, spróbuj później.'
             ));
         } catch (Exception $e) {
             echo json_encode(array(
-                'error' => DEBUG ? $e->getMessage() : 'An error has occurred, please try again.'
+                'error' => DEBUG ? $e->getMessage() : 'Wystąpił błąd, spróbuj później.'
             ));
         }
     } else {
