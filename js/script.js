@@ -306,7 +306,7 @@ $(function() {
         $this.find('div.error').remove();
         $this.find('.error').removeClass('error');
         var button = $this.find('button');
-        $('<div class="loading">Loading...</div>').insertAfter(button);
+        $('<div class="loading">Ładowanie...</div>').insertAfter(button);
         $.post($this.attr('action'), $this.serialize(), function(response) {
             if (response.error) {
                 $('<div class="error" />').text(response.error).insertAfter(button);
