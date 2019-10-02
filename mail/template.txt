@@ -1,4 +1,0 @@
-Imię i nazwisko: {{name}} 
-e-mail: {{email}}
-
-{{message}}
