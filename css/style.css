@@ -864,11 +864,14 @@ ul.list-of-our-pacients li:hover p{color:#062e48;}
 }
 
 ul.contacts-address{
-  padding-right:60px;
-  float:left;
+  margin: 0 auto;
   width:33%;
   clear:none;
   font-weight: 300;
+}
+
+.contacts-address a {
+  color: #fff;
 }
 
 .contacts-address li{
@@ -877,22 +880,9 @@ ul.contacts-address{
   line-height:24px;
   margin: 0;
   padding: 0 0 0 25px;
+  text-align: center;
 }
 
-.contacts-address li:first-child{
-  margin:0 0 20px;
-  padding: 0;
-  background: transparent;
-}
-.contacts-address li:first-child + li{
-  background: url('../img/wecare_sprite03.png') 0 4px no-repeat;
-}
-.contacts-address li:first-child + li + li{
-  background: url('../img/wecare_sprite03.png') 0 -154px no-repeat;
-}
-.contacts-address li:first-child + li + li + li{
-  background: url('../img/wecare_sprite03.png') 0 -74px no-repeat;
-}
 
 form.contact-form{
   display:block;
